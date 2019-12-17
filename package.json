@@ -1,0 +1,24 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "node service",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "node ./src/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.11",
+    "socket.io": "^2.3.0",
+    "util": "^0.12.1",
+    "uuid": "^3.3.3",
+    "ws": "^7.2.0"
+  }
+}
