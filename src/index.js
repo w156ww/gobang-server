@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const bodyParser = require("body-parser");
+const history = require('connect-history-api-fallback');
 
 const ip = require("ip");
 const cors = require('./middleware/cors');
@@ -24,6 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(router);
+
+app.use(history());
 
 require('./db-helper/index');
 
